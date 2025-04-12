@@ -16,7 +16,7 @@ window.onload = function () {
   console.log("selectedCity:", selectedCity);
   console.log("weatherData:", weatherData);
 
-  if (referrer.includes("previousCity.html") && selectedCity) {
+  if (referrer.includes("previouscity.html") && selectedCity) {
     displayCityWeather(selectedCity);
   } else if (Array.isArray(weatherData) && weatherData.length > 0) {
     // Show latest weatherData (last input)

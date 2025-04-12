@@ -84,5 +84,5 @@ document
   });
 
 previousCities.addEventListener("click", () => {
-  window.location.href = "previousCity.html";
+  window.location.href = "previouscity.html";
 });
