@@ -69,6 +69,32 @@ html {
   background-color: white;
 }
 
+#searchButton:hover {
+  background-color: rgb(119, 119, 119);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#previousCities {
+  margin-left: 189px;
+  font-family: open sans;
+  margin-top: 43px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+}
+
+#previousCities:hover {
+  background-color: rgb(119, 119, 119);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 #rainBackground {
   position: absolute;
   z-index: -1;
@@ -141,4 +167,78 @@ html {
   background: linear-gradient(217deg, #0ba8ff, #c687ff);
   justify-content: center;
   display: flex;
+}
+
+#goBackBtnContainer {
+  display: flex;
+  justify-content: center;
+  height: 99px;
+  width: 330px;
+  align-self: center;
+  margin: 50px auto auto auto;
+}
+
+#goBackBtn {
+  background: linear-gradient(217deg, #0ba8ff, #c687ff);
+  width: 330px;
+  height: 99px;
+  border-radius: 50px;
+  font-family: open sans;
+  font-size: large;
+}
+
+#goBackBtn:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+.bi.bi-arrow-left {
+  padding-right: 5px;
+  font-size: larger;
+}
+
+#cityContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  margin: auto;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  row-gap: 25px;
+  border: 2px solid;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  margin-top: 70px;
+}
+
+.cityCard {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin: auto;
+  padding-top: 25px;
+  border: 1px solid;
+  border-radius: 50px;
+  background: linear-gradient(217deg, #0ba8ff, #c687ff);
+}
+
+.cityCard:hover {
+  box-shadow: 0px 8px 10px darkmagenta;
+  filter: hue-rotate(-0.7turn);
+}
+
+p#previousP {
+  width: 165px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+h3#previousH3 {
+  margin: auto;
+  align-self: center;
+  font-family: open sans;
 }

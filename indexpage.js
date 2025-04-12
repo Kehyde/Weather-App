@@ -1,5 +1,6 @@
-const cities = [];
+const cities = JSON.parse(sessionStorage.getItem("cities")) || [];
 const weatherData = [];
+let weatherObject;
 const searchButton = document.querySelector("#searchButton");
 const inputBox = document.querySelector("#inputBox");
 
@@ -28,11 +29,18 @@ async function getWeather() {
       cityName: data.location.name,
       temperature: data.current.temp_c,
       condition: data.current.condition.text,
-      latitude: data.location.lat, //latidue and longitude will be used for the map don't forget!!!
+      // lat and long used for leaflet map
+      latitude: data.location.lat,
       longitude: data.location.lon,
     };
 
     weatherData.push(weatherObject);
+
+    if (cities.some((city) => city.cityName === weatherObject.cityName)) {
+      console.log("Duplicate");
+    } else {
+      cities.push(weatherObject);
+    }
 
     sessionStorage.setItem("weatherData", JSON.stringify(weatherData));
   } catch (error) {
@@ -45,8 +53,13 @@ async function getWeather() {
 
 searchButton.addEventListener("click", async () => {
   const cityName = inputBox.value;
-  if (cityName) {
-    cities.push(cityName);
+  if (!cities.includes(cityName)) {
+    // cities.push(weatherObject);
+    await getWeather();
+    sessionStorage.setItem("cities", JSON.stringify(cities));
+
+    window.location.href = "weatherdisplay.html";
+  } else {
     await getWeather();
     window.location.href = "weatherdisplay.html";
   }
@@ -57,10 +70,19 @@ document
   .addEventListener("keypress", async function (e) {
     if (e.key === "Enter") {
       const cityName = inputBox.value;
-      if (cityName) {
-        cities.push(cityName);
+      if (!cities.includes(cityName)) {
+        // cities.push(weatherObject);
+        await getWeather();
+        sessionStorage.setItem("cities", JSON.stringify(cities));
+
+        window.location.href = "weatherdisplay.html";
+      } else {
         await getWeather();
         window.location.href = "weatherdisplay.html";
       }
     }
   });
+
+previousCities.addEventListener("click", () => {
+  window.location.href = "previousCity.html";
+});

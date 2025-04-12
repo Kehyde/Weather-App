@@ -1,0 +1,26 @@
+IDEAS TO ADD TO THE PROJECT!!!
+
+More Weather Info
+
+1. UV Index
+
+2. wind speed
+
+------------------------------------------
+
+Previous Cities Function
+
+1. create a button named "previous cities"
+
+2. load another page and have cards generated for each item in the array (Mapping the array?)
+
+3. make every card clickable and display that weather data.
+
+
+Current issues:
+
+Whenever i click a card in the previousCity.html page it only shows me weather data for the latest city added to cities array.
+
+summary inclusion.
+
+critical thinking and problem solving is coding, and that's the easy part for me, that's how my mind works. I identify issues and how to fix them but i found it difficult to iterate fixes and translate my thoughts into code.
