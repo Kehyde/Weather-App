@@ -15,12 +15,16 @@ As my very first project as a software developer, it's also a personal milestone
 
 ## About
 
-Explain what the project is about, what problem it solves, and why it exists.
+NimbusWeathR is a web-based weather application designed to provide users with real-time weather updates for cities around the world. Whether you're planning your day or simply curious about the weather in different locations, NimbusWeathR offers a quick and easy way to access current weather conditions.
+
+The app is designed with simplicity and functionality in mind. It allows users to input any city, retrieve up-to-date weather data, and view detailed information such as temperature, condition, and location. Additionally, NimbusWeathR keeps track of users' recent city searches, making it easy to revisit previously checked cities.
+
+Built as a personal project and a milestone in my software development journey, NimbusWeathR has been a valuable exercise in working with APIs, JavaScript, responsive design, and local storage for session persistence.
 
 ## Features
 
 - Displays real time weather!
-- Temperature, UV Index, Precipitation, Condition
+- Temperature, UV Index, Precipitation, Condition!
 - Users can view previous searches!
 - Displays City's location!
 
