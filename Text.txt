@@ -1,21 +1,8 @@
 IDEAS TO ADD TO THE PROJECT!!!
 
-More Weather Info
 
-1. UV Index
-
-2. wind speed
 
 ------------------------------------------
-
-Previous Cities Function
-
-1. create a button named "previous cities"
-
-2. load another page and have cards generated for each item in the array (Mapping the array?)
-
-3. make every card clickable and display that weather data.
-
 
 Current issues:
 

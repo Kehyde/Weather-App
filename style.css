@@ -136,6 +136,12 @@ html {
   background: linear-gradient(217deg, #0ba8ff, #c687ff 53%);
 }
 
+.returnCityBtn:hover {
+  box-shadow: 0px 8px 10px darkmagenta;
+  filter: hue-rotate(-0.7turn);
+  cursor: default;
+}
+
 .anchorTag {
   text-decoration: none;
   width: 119px;
@@ -167,6 +173,24 @@ html {
   background: linear-gradient(217deg, #0ba8ff, #c687ff);
   justify-content: center;
   display: flex;
+}
+
+.precipitation {
+  color: white;
+  width: 210px;
+  border-radius: 10px;
+  margin-left: 474px;
+  padding: 5px;
+  background: linear-gradient(217deg, #0ba8ff, #c687ff);
+}
+
+.uvIndex {
+  color: white;
+  width: 210px;
+  border-radius: 10px;
+  margin-left: 474px;
+  padding: 5px;
+  background: linear-gradient(217deg, #0ba8ff, #c687ff);
 }
 
 #goBackBtnContainer {
